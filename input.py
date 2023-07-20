@@ -8,6 +8,6 @@ class Input:
         self.placeholder = placeholder
         
 
-    def vypis_input(self):
-        vypis_input = f'<input type="{self.type}" name="{self.name}" id="{self.id}" class="{self.class_}" placeholder="{self.placeholder}">'
+    def __str__(self):
+        vypis_input = f'<input type="{self.type}" name="{self.name}" id="{self.id}" class="{self.class_}" placeholder="{self.placeholder}">\n'
         return Markup(vypis_input)
