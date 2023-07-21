@@ -3,10 +3,9 @@ from markupsafe import Markup
 class Div:
     
     def __init__(self, class_):
-        
         self.class_ = class_
 
-    def vypis_div(self):
+    def __str__(self):
         vypis_div = f'<div class="{self.class_}">'
         return Markup(vypis_div)
     

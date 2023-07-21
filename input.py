@@ -1,5 +1,6 @@
 from markupsafe import Markup
 class Input:
+    
     def __init__(self, type, name, id, class_, placeholder):
         self.type = type
         self.name = name
@@ -9,5 +10,5 @@ class Input:
         
 
     def __str__(self):
-        vypis_input = f'<input type="{self.type}" name="{self.name}" id="{self.id}" class="{self.class_}" placeholder="{self.placeholder}">\n'
+        vypis_input = f'<input type="{self.type}" name="{self.name}" id="{self.id}" class="{self.class_}" placeholder="{self.placeholder}">'
         return Markup(vypis_input)
