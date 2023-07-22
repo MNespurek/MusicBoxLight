@@ -1,7 +1,7 @@
 from form import Form
 
+#vytváření formuláře
 form = Form(action='pridej', div_pred = "ano")
-
 form.vytvor_inputy(2)
 form.vytvor_selecty(2)
 form.vytvor_divy(2)
@@ -23,6 +23,8 @@ form.pridej_input(2)
 form.pridej_input(1)
 form.pridej_uzavri_form()
 print(form)
-for item in form.seznam_formular:
-    print(item)
+
+#vytisknutí definovaného formuláře dle volby do konzole
+for element in form.seznam_formular:
+    print(element)
 

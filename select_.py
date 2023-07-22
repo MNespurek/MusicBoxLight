@@ -1,16 +1,20 @@
 from markupsafe import Markup
+
+#třída Select    
 class Select:
-    
+
+# paramentry při inicializaci objektu
     def __init__(self, name, class_ ):
         self.name = name
         self.class_ = class_
-        
+
+# metoda vypisující počty možností objektu        
     def vypis_moznosti(self, moznost):
         moznost = int(moznost)
         moznosti = []
         hodnota = 0
         while hodnota < moznost:
-            hodnota +=1
+            hodnota += 1
             text = f'<option value="moznost{hodnota}">Možnost {hodnota}</option>\n'
             moznosti.append(text)
         moznosti_text = ""
