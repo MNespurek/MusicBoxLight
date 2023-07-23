@@ -24,7 +24,7 @@ form.pridej_input(1)
 form.pridej_uzavri_form()
 print(form)
 
-#vytisknutí definovaného formuláře dle volby do konzole
+#vytisknutí zvoleného formuláře
 for element in form.seznam_formular:
     print(element)
 

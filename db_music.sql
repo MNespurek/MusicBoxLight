@@ -143,6 +143,6 @@ JOIN album_interpret ai ON i.id_interpret = ai.id_interpret
 JOIN album a ON ai.id_album = a.id_album
 JOIN album_skladba asl ON a.id_album = asl.id_album
 JOIN skladba s ON asl.id_skladba = s.id_skladba
-ORDER BY s.delka ASC
+ORDER BY s.delka DESC
 LIMIT 1;	
 -- pozn. 1 albu může mít více interpretů.

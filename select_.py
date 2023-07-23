@@ -10,7 +10,6 @@ class Select:
 
 # metoda vypisující počty možností objektu        
     def vypis_moznosti(self, moznost):
-        moznost = int(moznost)
         moznosti = []
         hodnota = 0
         while hodnota < moznost:
